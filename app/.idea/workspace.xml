@@ -32,11 +32,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_profilejoueur.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/FindjoeursActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/ProfilejoueurActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,11 +100,13 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/custom_message_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_profile.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/RequestActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/FindjoeursActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/setting_row.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/profileActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_compte.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/CompteActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/FindjoeursActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_findjoeurs.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/ProfilejoueurActivity.java" />
       </list>
     </option>
   </component>
@@ -151,15 +159,15 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.ultimatefivefinal" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/res/menu" />
+      <recent name="$PROJECT_DIR$/src/main/res/drawable" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.example.ultimatefivefinal" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/res/menu" />
-      <recent name="$PROJECT_DIR$/src/main/res/drawable" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.ultimatefivefinal" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -281,16 +289,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -570,10 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_findjoeurs.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/profileActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3080">
@@ -653,8 +647,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/FindjoeursActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="96" column="96" selection-start-line="96" selection-start-column="83" selection-end-line="96" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2279#2308#0" expanded="true" />
+            <element signature="e#4994#5023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_findjoeurs.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_profilejoueur.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ultimatefivefinal/ProfilejoueurActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
