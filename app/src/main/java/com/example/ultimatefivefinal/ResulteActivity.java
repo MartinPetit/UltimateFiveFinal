@@ -410,7 +410,7 @@ public class ResulteActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("cherche une matche");
+        getSupportActionBar().setTitle("Rechercher un match");
 
 
     }
