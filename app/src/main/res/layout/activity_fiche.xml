@@ -61,7 +61,7 @@
         android:layout_centerHorizontal="false"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
-        android:text="Duree:"
+        android:text="Durée:"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -87,7 +87,7 @@
         android:layout_centerHorizontal="false"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
-        android:text="heure:"
+        android:text="Heure:"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -113,7 +113,7 @@
         android:layout_centerHorizontal="false"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
-        android:text="prix:"
+        android:text="Prix:"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -139,7 +139,7 @@
         android:layout_centerHorizontal="false"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal"
-        android:text="Type de terraine:"
+        android:text="Type de terrain:"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -151,7 +151,7 @@
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/date_text_view"
         android:layout_below="@id/fiche_prix_matche"
-        android:text="type terraine"
+        android:text="type terrain"
         android:textSize="20sp"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@id/date_text_view" />

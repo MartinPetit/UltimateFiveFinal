@@ -5,7 +5,7 @@
 
     <item
         android:id="@+id/menu_create_group"
-        android:title="add groupe"
+        android:title="Créer un groupe"
         app:showAsAction="never"/>
 
 
@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/menu_Logout"
-        android:title="logout"
+        android:title="Déconnexion"
         app:showAsAction="never"/>
 
 </menu>
