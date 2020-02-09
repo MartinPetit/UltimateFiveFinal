@@ -54,7 +54,7 @@ public class FindjoeursActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Find joeurs");
+        getSupportActionBar().setTitle("Tous les joueurs");
     }
 
     @Override

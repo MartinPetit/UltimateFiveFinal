@@ -33,7 +33,7 @@ public class profileActivity extends AppCompatActivity {
     private String descriptionD;
 
     private ListView listView;
-    private String titles[] = {"information profile","mes invitation ","mes matches","inviter un joeur"};
+    private String titles[] = {"Modifier mon profil","Mes invitations  "," Mes matchs","Inviter un joueur "};
     private String description[] = {descriptionA,descriptionB,descriptionC,descriptionD};
 
 

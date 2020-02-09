@@ -63,7 +63,7 @@ public class MessageActivity extends AppCompatActivity {
         //toolbar
         toolbar =  findViewById(R.id.toolbar_message);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Messanger");
+        getSupportActionBar().setTitle("messenger");
 
 
         bottomNavigationView=findViewById(R.id.BoottomNavigation);
