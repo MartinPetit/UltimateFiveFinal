@@ -13,13 +13,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GroupChatActivity"></activity>
-        <activity android:name=".ProfilejoueurActivity" />
-        <activity android:name=".FindjoeursActivity" />
-        <activity android:name=".RequestActivity" />
-        <activity android:name=".CompteActivity" />
+        <activity android:name=".GroupChatActivity"
+            android:parentActivityName=".MessageActivity"></activity>
+        <activity android:name=".ProfilejoueurActivity"
+            android:parentActivityName=".FindjoeursActivity"/>
+        <activity android:name=".FindjoeursActivity"
+            android:parentActivityName=".profileActivity"/>
+        <activity android:name=".RequestActivity"
+            android:parentActivityName=".profileActivity"/>
+        <activity android:name=".CompteActivity"
+            android:parentActivityName=".profileActivity"/>
         <activity android:name=".ChatsActivity" />
-        <activity android:name=".chatsActivity" />
         <activity android:name=".InscriptionActivity" />
 
         <meta-data
