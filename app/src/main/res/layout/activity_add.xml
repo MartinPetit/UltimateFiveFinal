@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar_add_matche"
         android:layout_centerHorizontal="true"
-        android:text="Parametre de matche"
+        android:text="Paramètres du match"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -130,7 +130,7 @@
         android:layout_marginTop="5dp"
         android:textStyle="bold"
         android:layout_below="@+id/description"
-        android:text="click pour changer l'image"/>
+        android:text="Ajouter une image"/>
 
     <ImageView
         android:id="@+id/image_matche"
@@ -147,7 +147,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="cree matche"
+        android:text="Valider"
         android:layout_below="@id/image_matche"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/background_light"

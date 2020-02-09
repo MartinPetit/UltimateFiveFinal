@@ -58,7 +58,7 @@
         android:id="@+id/type_matche"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="type de terraine"
+        android:text="type de terrain"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="5dp"
         android:textStyle="bold"
