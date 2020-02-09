@@ -52,7 +52,7 @@ public class FicheActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Détails du matche");
+        getSupportActionBar().setTitle("Détails du match");
 
         Userreference = FirebaseDatabase.getInstance().getReference().child("Users");
         Matchereference = FirebaseDatabase.getInstance().getReference().child("Matches");
