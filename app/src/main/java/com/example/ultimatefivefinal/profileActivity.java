@@ -27,10 +27,10 @@ import androidx.appcompat.widget.Toolbar;
 
 public class profileActivity extends AppCompatActivity {
 
-    private String descriptionA = "update,delete your information...";
-    private String descriptionB = "tout les invitation pour participer a une matche...";
-    private String descriptionC = "lieu'date,accepter au refuser une matche..";
-    private String descriptionD = "invitser les jouure pour particper a une matche...";
+    private String descriptionA;
+    private String descriptionB;
+    private String descriptionC;
+    private String descriptionD;
 
     private ListView listView;
     private String titles[] = {"information profile","mes invitation ","mes matches","inviter un joeur"};
