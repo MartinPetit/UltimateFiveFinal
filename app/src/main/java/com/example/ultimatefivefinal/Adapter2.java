@@ -15,61 +15,62 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class Adapter extends PagerAdapter {
+public class Adapter2 extends PagerAdapter {
 
-    private List<Matche> models;
-    private List<User> userM;
+    private List<User> model;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public Adapter(List<Matche> models, Context context) {
-        this.models = models;
+    public Adapter2(List<User> model, Context context) {
+        this.model = model;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return models.size();
+        return model.size();
     }
 
     @Override
-    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view.equals(object);
+    public boolean isViewFromObject(@NonNull View view2, @NonNull Object object) {
+        return view2.equals(object);
     }
 
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, final int position) {
         layoutInflater = LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.item, container, false);
+        View view2 = layoutInflater.inflate(R.layout.item2, container, false);
 
-        ImageView imageView;
-        TextView title, desc, prix;
+        ImageView imageView2;
+        TextView nom, prénom, age;
 
-        imageView = view.findViewById(R.id.image);
-        title = view.findViewById(R.id.title);
-        desc = view.findViewById(R.id.desc);
-        prix = view.findViewById(R.id.prix);
+        imageView2 = view2.findViewById(R.id.image2);
+        nom = view2.findViewById(R.id.nom);
+        prénom = view2.findViewById(R.id.prenom);
+        age = view2.findViewById(R.id.Age);
 
 
-        title.setText(models.get(position).getVille());
-        desc.setText(models.get(position).getDescription());
-        prix.setText(models.get(position).getPrix());
-        Picasso.get().load(models.get(position).getImage()).placeholder(R.drawable.matcher).into(imageView);
+        nom.setText(model.get(position).getNom());
+        prénom.setText(model.get(position).getPrenom());
+        age.setText(model.get(position).getAge());
+        Picasso.get().load(model.get(position).getImage()).placeholder(R.drawable.profile_image).into(imageView2);
 
-        view.setOnClickListener(new View.OnClickListener() {
+        view2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, FicheActivity.class);
-                intent.putExtra("param", models.get(position).getVille());
+                intent.putExtra("param", model.get(position).getVille());
                 context.startActivity(intent);
                 // finish();
             }
         });
 
-        container.addView(view, 0);
 
-        return view;
+
+        container.addView(view2, 0);
+
+        return view2;
     }
 
     @Override
@@ -79,4 +80,3 @@ public class Adapter extends PagerAdapter {
 
 
 }
-

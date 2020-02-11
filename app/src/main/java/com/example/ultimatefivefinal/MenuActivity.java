@@ -45,11 +45,15 @@ public class MenuActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     ViewPager viewPager;
     Adapter adapter;
+    Adapter2 adapter2;
     List<Matche> models;
+    List<User> model;
     Integer[] colors = null;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     private DatabaseReference MatcheRef;
+    private DatabaseReference UserRef;
     private StorageReference matchePhoto;
+    private StorageReference UserPhoto;
 
     private FirebaseUser firebaseUser;
     private FirebaseAuth mAuth;
@@ -69,18 +73,31 @@ public class MenuActivity extends AppCompatActivity {
         this.configeTollbar();
 
         MatcheRef = FirebaseDatabase.getInstance().getReference().child("Matches");
+        UserRef = FirebaseDatabase.getInstance().getReference().child("Users");
         matchePhoto = FirebaseStorage.getInstance().getReference().child("matche image");
+        UserPhoto = FirebaseStorage.getInstance().getReference().child("profile image");
 
 
         FirebaseRecyclerOptions<Matche> options = new FirebaseRecyclerOptions.Builder<Matche>()
                 .setQuery(MatcheRef,Matche.class)
                 .build();
 
+        FirebaseRecyclerOptions<User> options2 = new FirebaseRecyclerOptions.Builder<User>()
+                .setQuery(UserRef, User.class)
+                .build();
+
+
+        model = new ArrayList<>();
+        adapter2 = new Adapter2(model, this);
+        viewPager = findViewById(R.id.ViewPagerCard2);
+        viewPager.setAdapter(adapter2);
+        viewPager.setPadding(65, 0, 65, 0);
+
         models = new ArrayList<>();
         adapter = new Adapter(models, this);
         viewPager = findViewById(R.id.ViewPagerCard);
         viewPager.setAdapter(adapter);
-        viewPager.setPadding(65,80, 65, 0);
+        viewPager.setPadding(65, 170, 65, 0);
 
         MatcheRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -99,6 +116,25 @@ public class MenuActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
                 Log.w("FireBase", "Failed to read value.", error.toException());
+            }
+        });
+
+        UserRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                model.clear();
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+
+                    User user = ds.getValue(User.class);
+                    model.add(user);
+                    adapter2.notifyDataSetChanged();
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.w("FireBase", "Failed to read value.", databaseError.toException());
             }
         });
 
