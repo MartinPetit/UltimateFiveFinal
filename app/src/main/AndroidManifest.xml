@@ -13,16 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GroupChatActivity"
-            android:parentActivityName=".MessageActivity"></activity>
-        <activity android:name=".ProfilejoueurActivity"
-            android:parentActivityName=".FindjoeursActivity"/>
-        <activity android:name=".FindjoeursActivity"
-            android:parentActivityName=".profileActivity"/>
-        <activity android:name=".RequestActivity"
-            android:parentActivityName=".profileActivity"/>
-        <activity android:name=".CompteActivity"
-            android:parentActivityName=".profileActivity"/>
+        <activity
+            android:name=".GroupChatActivity"
+            android:parentActivityName=".MessageActivity" />
+        <activity
+            android:name=".ProfilejoueurActivity"
+            android:parentActivityName=".FindjoeursActivity" />
+        <activity
+            android:name=".FindjoeursActivity"
+            android:parentActivityName=".profileActivity" />
+        <activity
+            android:name=".RequestActivity"
+            android:parentActivityName=".profileActivity" />
+        <activity
+            android:name=".CompteActivity"
+            android:parentActivityName=".profileActivity" />
         <activity android:name=".ChatsActivity" />
         <activity android:name=".InscriptionActivity" />
 
@@ -47,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".FicheActivity"/>
+        <activity android:name=".FicheActivity" />
         <activity android:name=".MessageActivity" />
         <activity android:name=".profileActivity" />
         <activity android:name=".AddActivity" />

@@ -33,6 +33,34 @@
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/logo" />
 
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:id="@+id/ViewPagerCard"
+        android:layout_centerInParent="true"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:layout_below="@id/toolbar"
+        >
+    </androidx.viewpager.widget.ViewPager>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Les Derniers matchs"
+        android:textSize="20sp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+
+        />
+
 
 
 
